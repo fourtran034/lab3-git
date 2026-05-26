@@ -46,7 +46,9 @@ namespace Lab3App
 
         private static void InputA()
         {
-            Console.WriteLine("Не реализовано.");
+            Console.Write("A = ");
+            _a = double.Parse(Console.ReadLine());
+            _hasA = true;
         }
 
         private static void InputB()
