@@ -59,7 +59,8 @@ namespace Lab3App
 
         private static void Add()
         {
-            Console.WriteLine("Не реализовано.");
+            if (!TryReadOperands()) return;
+            Console.WriteLine(_a + _b);
         }
 
         private static void Subtract()
