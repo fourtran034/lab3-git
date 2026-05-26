@@ -76,7 +76,8 @@ namespace Lab3App
 
         private static void Divide()
         {
-            Console.WriteLine("Не реализовано.");
+            if (!TryReadOperands()) return;
+            Console.WriteLine(_a / _b);
         }
 
         private static bool TryReadOperands()
