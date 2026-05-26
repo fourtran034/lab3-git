@@ -43,7 +43,6 @@ namespace Lab3App
             Console.WriteLine("5 - выполнить операцию \"*\"");
             Console.WriteLine("6 - выполнить операцию \"/\"");
         }
-
         private static void InputA()
         {
             Console.Write("A = ");
@@ -53,7 +52,9 @@ namespace Lab3App
 
         private static void InputB()
         {
-            Console.WriteLine("Не реализовано.");
+            Console.Write("B = ");
+            _b = double.Parse(Console.ReadLine());
+            _hasB = true;
         }
 
         private static void Add()
