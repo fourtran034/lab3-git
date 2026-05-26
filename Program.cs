@@ -70,7 +70,8 @@ namespace Lab3App
 
         private static void Multiply()
         {
-            Console.WriteLine("Не реализовано.");
+            if (!TryReadOperands()) return;
+            Console.WriteLine(_a * _b);
         }
 
         private static void Divide()
